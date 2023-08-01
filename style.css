@@ -1,4 +1,9 @@
-nav {
+html {
+    background-color: #eaeef1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav {
     /* border: solid green; */
     display: flex;
     justify-content: space-between;
@@ -67,21 +72,32 @@ nav {
     text-align: center;
   }
   
-  #duck {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
   .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 60vw;
+  }
+  
+  section#duck {
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .duck img {
     height: 40vh;
     width: 40vh;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #duck {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .text {
+      min-width: 100vw;
+    }
   }
   
   #emergency {
